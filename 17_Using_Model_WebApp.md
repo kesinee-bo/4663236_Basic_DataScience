@@ -6,7 +6,7 @@ Oct 6, 2026 · @Lost Star
 
 Train โมเดล **KNN** จำแนกผู้ป่วยเบาหวานจากไฟล์ `diabetes_clean.csv` บน Colab วัดผลด้วย 5-fold cross-validation (Accuracy, Precision, Recall, F1-Score โดยดู F1-Score เป็นหลัก) แล้วนำไปให้หน้าเว็บ JavaScript ธรรมดาเรียกใช้ 2 แบบ: **แบบ A** ผ่าน FastAPI และ **แบบ B** รันในเบราว์เซอร์ด้วย onnxruntime-web ทั้งสองแบบให้ผลทำนายเท่ากัน และทดสอบรันครบทุกขั้นแล้ว
 
-![สถาปัตยกรรม · train 1 ครั้ง ใช้งาน 2 แบบ](architecture.png)
+![สถาปัตยกรรม · train 1 ครั้ง ใช้งาน 2 แบบ](images/17_01_architecture.png)
 
 แบบ A มีเซิร์ฟเวอร์ Python คั่นกลาง ส่วนแบบ B ส่งไฟล์โมเดลไปให้เบราว์เซอร์รันเอง หน้าเว็บสองแบบใช้ HTML/CSS ชุดเดียวกัน ต่างกันแค่ `app.js`
 
@@ -21,7 +21,7 @@ Train โมเดล **KNN** จำแนกผู้ป่วยเบาห�
 
 ## Dataset: Pima Indians Diabetes
 
-ใช้ไฟล์ `diabetes_clean.csv` (แนบมาใน zip) ซึ่งเป็นข้อมูลชุด [Pima Indians Diabetes Database](https://www.kaggle.com/datasets/uciml/pima-indians-diabetes-database) จาก Kaggle: 768 แถว, 8 feature, เป้าหมาย `Outcome` (1 = เป็นเบาหวาน 268 คน หรือ 34.9%) เป็นงาน binary classification ขนาดเล็กที่ train บน Colab ได้ในไม่กี่วินาที
+ใช้ไฟล์ `diabetes_clean.csv` (แนบมาใน zip) ซึ่งเป็นข้อมูลชุด [Pima Indians Diabetes Database](https://www.kaggle.com/datasets/mragpavank/diabetes) จาก Kaggle: 768 แถว, 8 feature, เป้าหมาย `Outcome` (1 = เป็นเบาหวาน 268 คน หรือ 34.9%) เป็นงาน binary classification ขนาดเล็กที่ train บน Colab ได้ในไม่กี่วินาที
 
 | คอลัมน์ | ความหมาย | หน่วย |
 | --- | --- | --- |
