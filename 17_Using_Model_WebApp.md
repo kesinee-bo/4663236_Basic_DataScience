@@ -1,6 +1,6 @@
 # ตัวอย่างการประยุกต์ใช้โมเดล Classification กับ Web Application
 
-Train โมเดล **KNN** จำแนกผู้ป่วยเบาหวานจากไฟล์ `diabetes_clean.csv` บน Colab วัดผลด้วย 5-fold cross-validation (Accuracy, Precision, Recall, F1-Score โดยดู F1-Score เป็นหลัก) แล้วนำไปให้หน้าเว็บ JavaScript ธรรมดาเรียกใช้ 2 แบบ: **แบบ A** ผ่าน FastAPI และ **แบบ B** รันในเบราว์เซอร์ด้วย onnxruntime-web ทั้งสองแบบให้ผลทำนายเท่ากัน และทดสอบรันครบทุกขั้นแล้ว
+ตัวอย่างนี้แสดงขั้นตอนการ Train โมเดล **KNN** จำแนกผู้ป่วยเบาหวานจากไฟล์ `diabetes_clean.csv` บน Colab วัดผลด้วย 5-fold cross-validation (Accuracy, Precision, Recall, F1-Score โดยดู F1-Score เป็นหลัก) แล้วนำไปให้หน้าเว็บ JavaScript ธรรมดาเรียกใช้ 2 แบบ: **แบบ A** ผ่าน FastAPI และ **แบบ B** รันในเบราว์เซอร์ด้วย onnxruntime-web ทั้งสองแบบให้ผลทำนายเท่ากัน และทดสอบรันครบทุกขั้นแล้ว
 
 ![สถาปัตยกรรม · train 1 ครั้ง ใช้งาน 2 แบบ](images/17_01_architecture.png)
 
