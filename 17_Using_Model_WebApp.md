@@ -1,9 +1,5 @@
 # ตัวอย่างการประยุกต์ใช้โมเดล Classification กับ Web Application
 
-Oct 6, 2026 · @Lost Star
-
-## ภาพรวม
-
 Train โมเดล **KNN** จำแนกผู้ป่วยเบาหวานจากไฟล์ `diabetes_clean.csv` บน Colab วัดผลด้วย 5-fold cross-validation (Accuracy, Precision, Recall, F1-Score โดยดู F1-Score เป็นหลัก) แล้วนำไปให้หน้าเว็บ JavaScript ธรรมดาเรียกใช้ 2 แบบ: **แบบ A** ผ่าน FastAPI และ **แบบ B** รันในเบราว์เซอร์ด้วย onnxruntime-web ทั้งสองแบบให้ผลทำนายเท่ากัน และทดสอบรันครบทุกขั้นแล้ว
 
 ![สถาปัตยกรรม · train 1 ครั้ง ใช้งาน 2 แบบ](images/17_01_architecture.png)
@@ -763,3 +759,8 @@ python -m http.server 5500
 **ต่อยอด**: ปรับ `class_weight` หรือ threshold ให้ recall สูงขึ้นสำหรับงานคัดกรอง, ใช้ `GridSearchCV` จูนพารามิเตอร์, deploy API บน Render/Railway แล้วชี้ `API_URL` ไปที่นั่น, หรือวางแบบ B บน GitHub Pages
 
 ตัวอย่างนี้เพื่อการเรียนรู้เท่านั้น ไม่ใช่การวินิจฉัยทางการแพทย์
+
+
+
+
+<sup><ins>หมายเหตุ</ins> เอกสารนี้มีการใช้ Generative AI เข้ามาช่วยในการสร้างเอกสารบางส่วน และมีเพิ่มเติมข้อมูล ตลอดจนปรับปรุงข้อมูลเพื่อความเหมาะสมโดยผู้เขียน</sup> 
